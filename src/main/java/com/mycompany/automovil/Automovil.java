@@ -1,8 +1,12 @@
+package com.mycompany.automovil;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.automovil;
+
+
+
 
 
 public class Automovil {
@@ -16,11 +20,11 @@ public class Automovil {
     private int cantPuertas;
     private float velocidadMax;
     private float velocidadActual;
-    private Color color;
+    private color color;
 
     public Automovil(String marca, int modelo, float motor, TipoCombustible tipoCombustible,
                      TipoAutomovil tipoAutomovil, int cantPuertas, int cantAsientos,
-                     float velocidadMax, float velocidadActual, Color color) {
+                     float velocidadMax, float velocidadActual, color color) {
         this.marca = marca;
         this.modelo = modelo;
         this.motor = motor;
@@ -60,8 +64,8 @@ public class Automovil {
     public float getVelocidadActual() { return velocidadActual; }
     public void setVelocidadActual(float velocidadActual) { this.velocidadActual = velocidadActual; }
 
-    public Color getColor() { return color; }
-    public void setColor(Color color) { this.color = color; }
+    public color getColor() { return color; }
+    public void setColor(color color) { this.color = color; }
 
     public float acelerar(float cantidad) {
         if (velocidadActual + cantidad <= velocidadMax) {

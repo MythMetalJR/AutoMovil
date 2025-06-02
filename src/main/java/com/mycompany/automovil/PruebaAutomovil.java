@@ -5,11 +5,14 @@
 package com.mycompany.automovil;
 
 
+
+
+
 public class PruebaAutomovil {
     
     public static void main(String[] args) {
         Automovil auto = new Automovil("Toyota", 2020, 2.0f, TipoCombustible.GASOLINA, 
-                                       TipoAutomovil.COMPACTO, 4, 5, 180.0f, 0.0f, Color.ROJO);
+                                       TipoAutomovil.COMPACTO, 4, 5, 180.0f, 0.0f, color.ROJO);
 
         auto.setVelocidadActual(100.0f);
         auto.acelerar(20.0f);
